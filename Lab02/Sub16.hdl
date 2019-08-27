@@ -1,0 +1,9 @@
+CHIP Sub16 {
+    IN a[16], b[16];
+    OUT out[16], carry;
+
+    PARTS:
+    Not16(in=b, out=con1);
+    Inc16(in=con1, out=minusb);
+    Add16(a=a, b=minusb, out=out, carry=carry);
+}
