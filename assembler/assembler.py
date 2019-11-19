@@ -127,3 +127,5 @@ for i in stripped:
 out = open("test.hack", "w")
 for i in translated:
     out.write(i+"\n")
+
+out.close()
